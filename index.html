@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function(){
+       emailjs.init("user_AVbaPLI183mAH4EguXI4i");
+    })();
+    var service_id = "gmail";
+    var template_id = "testtemplate";
+    $( document ).ready(function() {
+      $("#click").click(function sendEmail() {
+        // emailjs.send(service_id,template_id,{name: "James", notes: "Check this out!"});
+        window.open('mailto:jradtkey@gmail.com?subject=subject&body=body');
+      })
+    });
+    </script>
+  </head>
+  <body>
+    <button id="click" type="button" name="button">Click</button>
+  </body>
+</html>
